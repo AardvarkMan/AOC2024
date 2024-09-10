@@ -1,6 +1,6 @@
 {
   "country": "us",
-  "appFolders": [],
+  "appFolders": ["AOC2024"],
   "testFolders": [],
   "bcptTestFolders": []
 }
