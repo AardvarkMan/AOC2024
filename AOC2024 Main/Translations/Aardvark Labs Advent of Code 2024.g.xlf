@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Aardvark Labs Advent of Code 2024">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2880566586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AOC Challenge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 734629840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2 Completed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challange2Complete - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 734629840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2 Complete</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challange2Complete - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 410663485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1 Completed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge1Complete - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 410663485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1 Complete</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge1Complete - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 496891833 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge input text 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge1Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 496891833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1 Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge1Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 2082500672 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge input text 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge2Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 2082500672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2 Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Challenge2Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 2141894293 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge data set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_ChallengeData - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 2141894293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_ChallengeData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3813171240 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Advent of Code Day</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Day - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3813171240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Day</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Day - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 1120952161 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 1120952161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3259870308 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result value 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Result1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3259870308 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Result1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3897566925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result Value 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Result2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3897566925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_Result2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3082211978 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The simple data set example for the challenge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_SimpleData - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2880566586 - Field 3082211978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge Simple Example</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_SimpleData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AOC Challenge Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2107200654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control Challenge1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 496891833 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1 Body Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Challenge1Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 496891833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Challenge1Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 194110803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control Challenge2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2082500672 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2 Body Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Challenge2Text - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2082500672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Challenge2Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2828291380 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge data set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARd_Data - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 2828291380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Challenge Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARd_Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 3926331916 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Example data set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Example - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 3926331916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Example Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control ARD_Example - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 1847164289 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run only the Example Data for a test run</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control RunSampleData - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Control 1847164289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run Example Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Control RunSampleData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Action 1768406296 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Result 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Action CalculateResult1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Action 1768406296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Result 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Action CalculateResult1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Action 2406102913 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Result 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Action CalculateResult2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1503817702 - Action 2406102913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Result 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeCard - Action CalculateResult2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1144087104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AOC Challenge List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ARD_AOCChallengeList - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
