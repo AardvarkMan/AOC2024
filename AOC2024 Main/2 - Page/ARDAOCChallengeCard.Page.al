@@ -34,7 +34,7 @@ page 82024 ARD_AOCChallengeCard
                         VarOutStream: OutStream;
                         BlobInStream: InStream;
                     begin
-                        if Challenge1Body <> '' then begin
+                        if ChallengeExample <> '' then begin
                             TempBLOB.CreateOutStream(VarOutStream);
                             VarOutStream.WriteText(ChallengeExample);
                             TempBLOB.CreateInStream(BlobInStream);
@@ -55,7 +55,7 @@ page 82024 ARD_AOCChallengeCard
                         VarOutStream: OutStream;
                         BlobInStream: InStream;
                     begin
-                        if Challenge1Body <> '' then begin
+                        if ChallengeData <> '' then begin
                             TempBLOB.CreateOutStream(VarOutStream);
                             VarOutStream.WriteText(ChallengeData);
                             TempBLOB.CreateInStream(BlobInStream);

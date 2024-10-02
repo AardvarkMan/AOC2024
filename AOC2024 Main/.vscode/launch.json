@@ -2,11 +2,25 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "snapshotInitialize: Your own server",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "sessionId": 132,
+            "environmentType": "OnPrem",
+            "server": "http://aardvarklabs",
+            "tenant": "default",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile",
+            "profilingType": "Instrumentation"
+        },
+        {
             "name": "Your own server",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://bcserver",
+            "server": "http://aardvarklabs",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 22,
