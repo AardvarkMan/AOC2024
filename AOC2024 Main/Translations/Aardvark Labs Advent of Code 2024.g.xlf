@@ -108,6 +108,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_SimpleData - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 610828283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>_DoubleIntegerList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 610828283 - Field 1120952161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ARD_No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Field ARD_No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 610828283 - Field 2633090102 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Field ARD_Value1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 610828283 - Field 2633090102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Field ARD_Value1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 610828283 - Field 720000251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Field ARD_Value2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 610828283 - Field 720000251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Field ARD_Value2 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1503817702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AOC Challenge Card</source>
           <note from="Developer" annotates="general" priority="2"></note>

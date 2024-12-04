@@ -23,7 +23,7 @@
             "server": "http://aardvarklabs",
             "serverInstance": "BC",
             "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "startupObjectId": 82025,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
