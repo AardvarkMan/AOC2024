@@ -1,6 +1,6 @@
 table 82025 ARD_DoubleIntegerList
 {
-    Caption = '_DoubleIntegerList';
+    Caption = 'Double Integer List';
     DataClassification = CustomerContent;
     
     fields
