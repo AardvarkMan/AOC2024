@@ -1,6 +1,17 @@
 codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
 {
 
+    /// <summary>
+    /// Calculates the result based on the given record and whether to run the example or not.
+    /// </summary>
+    /// <param name="Rec">The record containing the challenge data.</param>
+    /// <param name="RunExample">Boolean indicating whether to run the example or the actual challenge data.</param>
+    /// <returns>An integer representing the calculated result.</returns>
+    /// <remarks>
+    /// This procedure processes a list of text values, splits them into individual values, and evaluates each value.
+    /// It checks if the values are increasing or decreasing and if the difference between consecutive values is within a certain range.
+    /// If the values are either strictly increasing or decreasing and within the range, the result is incremented.
+    /// </remarks>
     procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         AOCSupport: Codeunit ARD_AOCSupport;
@@ -46,6 +57,16 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         exit(Result);
     end;
 
+    /// <summary>
+    /// Calculates the result based on the provided record and example flag.
+    /// </summary>
+    /// <param name="Rec">The record of type ARD_AOCChallenge containing the challenge data.</param>
+    /// <param name="RunExample">A boolean flag indicating whether to run the example data or the actual challenge data.</param>
+    /// <returns>An integer representing the calculated result.</returns>
+    /// <remarks>
+    /// This procedure processes the input data by splitting it into lines and evaluating each line using the EvaluateList function.
+    /// Depending on the evaluation result, it increments the result or fail counters.
+    /// </remarks>    
     procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         AOCSupport: Codeunit ARD_AOCSupport;
@@ -86,17 +107,19 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
                     Fails := Fails + 1;
 
             end;
-
-            // if EvaluateList(TestValue, 0) then
-            //     Result := Result + 1
-            // else if EvaluateList(TestValue, -1) then
-            //     Result := Result + 1
-            // else if EvaluateList(TestValue, 1) then Result := Result + 1;
         end;
 
         exit(Result);
     end;
-
+    
+    /// <summary>
+    /// Evaluates a list of text values to determine if they are either strictly increasing or decreasing
+    /// within a specified range. If the difference between consecutive values exceeds 3 or if there are
+    /// equal consecutive values, the evaluation fails.
+    /// </summary>
+    /// <param name="TestValue">The text value to be evaluated.</param>
+    /// <param name="Offset">The offset used to adjust the position in the list when a failure occurs.</param>
+    /// <returns>Returns true if the list is either strictly increasing or decreasing within the specified range; otherwise, false.</returns>
     local procedure EvaluateList(TestValue: Text; Offset: Integer): Boolean
     var
         AOCSupport: Codeunit ARD_AOCSupport;

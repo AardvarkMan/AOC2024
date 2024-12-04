@@ -1,6 +1,19 @@
 codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
 {
-
+    // This procedure calculates a result based on the provided ARD_AOCChallenge record.
+    // It processes either example data or actual challenge data depending on the RunExample flag.
+    // The procedure performs the following steps:
+    // 1. Retrieves and splits the input data into lines.
+    // 2. Iterates through each line, splits the values, evaluates them as integers, and stores them in a temporary table.
+    // 3. Adds the first integer of each line to a list.
+    // 4. Iterates through the list of integers, filters the temporary table based on the second integer value, counts the matches, and calculates the result.
+    // 
+    // Parameters:
+    //   Rec: Record ARD_AOCChallenge - The challenge record containing the data to be processed.
+    //   RunExample: Boolean - Flag indicating whether to run the example data or the actual challenge data.
+    // 
+    // Returns:
+    //   Integer - The calculated result based on the processed data.
     procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         IntegerTable: Record ARD_DoubleIntegerList temporary;
@@ -56,6 +69,20 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
         exit(Result);
     end;
 
+    // This procedure calculates a result based on the provided ARD_AOCChallenge record.
+    // It processes either example data or actual challenge data depending on the RunExample flag.
+    // The procedure performs the following steps:
+    // 1. Retrieves and splits the input data into lines.
+    // 2. Iterates through each line, splits the values, evaluates them as integers, and stores them in a temporary table.
+    // 3. Adds the first integer of each line to a list.
+    // 4. Iterates through the list of integers, filters the temporary table based on the second integer value, counts the matches, and calculates the result.
+    // 
+    // Parameters:
+    //   Rec: Record ARD_AOCChallenge - The challenge record containing the data to be processed.
+    //   RunExample: Boolean - Flag indicating whether to run the example data or the actual challenge data.
+    // 
+    // Returns:
+    //   Integer - The calculated result based on the processed data.
     procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         IntegerTable: Record ARD_DoubleIntegerList temporary;

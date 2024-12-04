@@ -1,6 +1,17 @@
 codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
 {
 
+    /// <summary>
+    /// Calculates the result based on the input data from the ARD_AOCChallenge record.
+    /// </summary>
+    /// <param name="Rec">The ARD_AOCChallenge record containing the challenge data.</param>
+    /// <param name="RunExample">Boolean flag indicating whether to run the example data or the actual challenge data.</param>
+    /// <returns>An integer representing the calculated result.</returns>
+    /// <remarks>
+    /// This procedure retrieves the challenge data or example data based on the RunExample flag.
+    /// It then uses a regular expression to find all matches of the pattern 'mul(d+,d+)' in the input data.
+    /// For each match, it extracts the two integer values, multiplies them, and adds the result to the total.
+    /// </remarks>
     procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         Matches: Record Matches temporary;
@@ -40,6 +51,19 @@ codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
         exit(Result);
     end;
 
+    /// <summary>
+    /// Calculates the result based on the provided record and example flag.
+    /// </summary>
+    /// <param name="Rec">The record containing the challenge data.</param>
+    /// <param name="RunExample">Boolean flag to determine if example data should be used.</param>
+    /// <returns>The calculated result as an integer.</returns>
+    /// <remarks>
+    /// This procedure retrieves the challenge data or example data based on the RunExample flag.
+    /// It then uses a regex pattern to find matches in the input data. The pattern looks for
+    /// multiplication operations (mul(x,y)), and control operations (do() and don't()).
+    /// The result is calculated by performing the multiplication operations only when the
+    /// Calculate flag is true, which is controlled by the do() and don't() operations.
+    /// </remarks>
     procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
         Matches: Record Matches temporary;
