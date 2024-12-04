@@ -109,7 +109,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table ARD_AOCChallenge - Field ARD_SimpleData - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 610828283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>_DoubleIntegerList</source>
+          <source>Double Integer List</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ARD_DoubleIntegerList - Property Caption</note>
         </trans-unit>

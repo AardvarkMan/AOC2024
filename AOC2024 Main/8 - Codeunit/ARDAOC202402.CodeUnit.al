@@ -18,7 +18,6 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         Inputs: list of [Text];
         TestValue: Text;
         Values: List of [Text];
-        Integers: List of [Integer];
         tmpInteger1: Integer;
         tmpInteger2: Integer;
         Increasing: Boolean;
@@ -28,6 +27,7 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         Result: Integer;
     begin
         Result := 0;
+        tmpInteger2 := 0;
         if RunExample then
             Inputs := AOCSupport.SplitLines(Rec.RetrieveChallengeExample())
         else
@@ -72,19 +72,8 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         AOCSupport: Codeunit ARD_AOCSupport;
         Inputs: list of [Text];
         TestValue: Text;
-        Values: List of [Text];
-        Integers: List of [Integer];
-        tmpInteger1: Integer;
-        tmpInteger2: Integer;
-        Increasing: Boolean;
-        Decreasing: Boolean;
-        FirstValue: Boolean;
-        OverRange: Boolean;
-        Processing: Boolean;
-        HasFailed: Boolean;
         Result: Integer;
         Fails: Integer;
-        Count: Integer;
     begin
         Result := 0;
         Fails := 0;
@@ -93,7 +82,7 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         else
             Inputs := AOCSupport.SplitLines(Rec.RetrieveChallengeData());
 
-        foreach TestValue in Inputs do begin
+        foreach TestValue in Inputs do
             case true of
                 EvaluateList(TestValue, 0):
                     Result := Result + 1;
@@ -105,13 +94,11 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
                     Result := Result + 1;
                 else
                     Fails := Fails + 1;
-
             end;
-        end;
 
         exit(Result);
     end;
-    
+
     /// <summary>
     /// Evaluates a list of text values to determine if they are either strictly increasing or decreasing
     /// within a specified range. If the difference between consecutive values exceeds 3 or if there are
@@ -132,9 +119,9 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
         OverRange: Boolean;
         Processing: Boolean;
         HasFailed: Boolean;
-        Result: Integer;
         Count: Integer;
     begin
+        tmpInteger2 := 0;
         Values := AOCSupport.SplitValues(TestValue);
         Increasing := false;
         Decreasing := false;

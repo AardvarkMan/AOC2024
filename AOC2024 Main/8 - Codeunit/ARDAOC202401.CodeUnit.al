@@ -16,7 +16,7 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
     //   Integer - The calculated result based on the processed data.
     procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
-        IntegerTable: Record ARD_DoubleIntegerList temporary;
+        TempIntegerTable: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;
         Inputs: list of [Text];
         Values: List of [Text];
@@ -39,31 +39,31 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
             System.Evaluate(TestInteger1, Values.Get(1));
             System.Evaluate(TestInteger2, Values.Get(2));
 
-            IntegerTable.Init();
-            IntegerTable."ARD_No." := Count;
-            IntegerTable.ARD_Value1 := TestInteger1;
-            IntegerTable.ARD_Value2 := TestInteger2;
-            IntegerTable.Insert();
+            TempIntegerTable.Init();
+            TempIntegerTable."ARD_No." := Count;
+            TempIntegerTable.ARD_Value1 := TestInteger1;
+            TempIntegerTable.ARD_Value2 := TestInteger2;
+            TempIntegerTable.Insert();
             Count := Count + 1;
         end;
 
-        IntegerTable.SetCurrentKey(ARD_Value1);
-        IntegerTable.Setfilter("ARD_No.", '<>%1', 0);
+        TempIntegerTable.SetCurrentKey(ARD_Value1);
+        TempIntegerTable.Setfilter("ARD_No.", '<>%1', 0);
 
-        if IntegerTable.FindSet() then
+        if TempIntegerTable.FindSet() then
             repeat
-                IntValuesSorted.Add(IntegerTable.ARD_Value1);
-            until IntegerTable.Next() = 0;
+                IntValuesSorted.Add(TempIntegerTable.ARD_Value1);
+            until TempIntegerTable.Next() = 0;
 
-        IntegerTable.SetCurrentKey(ARD_Value2);
-        IntegerTable.Setfilter("ARD_No.", '<>%1', 0);
+        TempIntegerTable.SetCurrentKey(ARD_Value2);
+        TempIntegerTable.Setfilter("ARD_No.", '<>%1', 0);
 
-        if IntegerTable.FindSet() then begin
+        if TempIntegerTable.FindSet() then begin
             Count := 1;
             repeat
-                Result := Result + Abs(IntValuesSorted.Get(Count) - IntegerTable.ARD_Value2);
+                Result := Result + Abs(IntValuesSorted.Get(Count) - TempIntegerTable.ARD_Value2);
                 Count := Count + 1;
-            until IntegerTable.Next() = 0;
+            until TempIntegerTable.Next() = 0;
         end;
 
         exit(Result);
@@ -85,7 +85,7 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
     //   Integer - The calculated result based on the processed data.
     procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
-        IntegerTable: Record ARD_DoubleIntegerList temporary;
+        TempIntegerTable: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;
         Inputs: list of [Text];
         Values: List of [Text];
@@ -109,17 +109,17 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
             System.Evaluate(TestInteger2, Values.Get(2));
             LeftList.Add(TestInteger1);
 
-            IntegerTable.Init();
-            IntegerTable."ARD_No." := Count;
-            IntegerTable.ARD_Value1 := TestInteger1;
-            IntegerTable.ARD_Value2 := TestInteger2;
-            IntegerTable.Insert();
+            TempIntegerTable.Init();
+            TempIntegerTable."ARD_No." := Count;
+            TempIntegerTable.ARD_Value1 := TestInteger1;
+            TempIntegerTable.ARD_Value2 := TestInteger2;
+            TempIntegerTable.Insert();
             Count := Count + 1;
         end;
 
         foreach TestInteger1 in LeftList do begin
-            IntegerTable.setfilter(ARD_Value2, '%1', TestInteger1);
-            Count := IntegerTable.Count();
+            TempIntegerTable.setfilter(ARD_Value2, '%1', TestInteger1);
+            Count := TempIntegerTable.Count();
             Result := Result + (TestInteger1 * Count);
         end;
 

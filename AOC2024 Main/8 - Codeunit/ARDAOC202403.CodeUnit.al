@@ -14,13 +14,11 @@ codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
     /// </remarks>
     procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
-        Matches: Record Matches temporary;
-        AOCSupport: Codeunit ARD_AOCSupport;
+        TempMatches: Record Matches temporary;
         Regex: CodeUnit Regex;
         Pattern: Text;
         Inputs: Text;
         MatchText: Text;
-        tmpText: Text;
         Result: Integer;
         Values: List of [Text];
         Value1: Integer;
@@ -34,19 +32,18 @@ codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
 
         Pattern := 'mul\(\d+,\d+\)';
 
-        Regex.Match(Inputs, Pattern, Matches);
+        Regex.Match(Inputs, Pattern, TempMatches);
 
-        if Matches.FindSet() then begin
+        if TempMatches.FindSet() then
             repeat
-                MatchText := Matches.ReadValue();
+                MatchText := TempMatches.ReadValue();
                 MatchText := MatchText.Remove(1, 4);
                 MatchText := MatchText.Replace(')', '');
                 Values := MatchText.Split(',');
                 System.Evaluate(Value1, Values.get(1));
                 System.Evaluate(Value2, Values.get(2));
                 Result := Result + (Value1 * Value2);
-            until Matches.Next() = 0;
-        end;
+            until TempMatches.Next() = 0;
 
         exit(Result);
     end;
@@ -66,13 +63,11 @@ codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
     /// </remarks>
     procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
     var
-        Matches: Record Matches temporary;
-        AOCSupport: Codeunit ARD_AOCSupport;
+        TempMatches: Record Matches temporary;
         Regex: CodeUnit Regex;
         Pattern: Text;
         Inputs: Text;
         MatchText: Text;
-        tmpText: Text;
         Result: Integer;
         Values: List of [Text];
         Value1: Integer;
@@ -87,29 +82,30 @@ codeunit 82031 ARD_AOC202403 implements ARD_AdventOfCodeProcessor
 
         Pattern := 'mul\(\d+,\d+\)|do\(\)|don''t\(\)';
 
-        Regex.Match(Inputs, Pattern, Matches);
+        Regex.Match(Inputs, Pattern, TempMatches);
 
         Calculate := true;
-        if Matches.FindSet() then begin
+        if TempMatches.FindSet() then
             repeat
-                MatchText := Matches.ReadValue();
-                if MatchText.ToLower() = 'do()' then
-                    Calculate := true
-                else if MatchText.ToLower() = 'don''t()' then
-                    Calculate := false
-                else begin
-                    if Calculate then begin
-                        MatchText := MatchText.Remove(1, 4);
-                        MatchText := MatchText.Replace(')', '');
-                        Values := MatchText.Split(',');
-                        System.Evaluate(Value1, Values.get(1));
-                        System.Evaluate(Value2, Values.get(2));
-                        Result := Result + (Value1 * Value2);
-                    end;
+                MatchText := TempMatches.ReadValue();
+                
+                case true of
+                    MatchText.ToLower() = 'do()':
+                        Calculate := true;
+                    MatchText.ToLower() = 'don''t()':
+                        Calculate := false;
+                    else
+                        if Calculate then begin
+                            MatchText := MatchText.Remove(1, 4);
+                            MatchText := MatchText.Replace(')', '');
+                            Values := MatchText.Split(',');
+                            System.Evaluate(Value1, Values.get(1));
+                            System.Evaluate(Value2, Values.get(2));
+                            Result := Result + (Value1 * Value2);
+                        end;
                 end;
 
-            until Matches.Next() = 0;
-        end;
+            until TempMatches.Next() = 0;
 
         exit(Result);
     end;
