@@ -1,3 +1,5 @@
+https://adventofcode.com/2024
+
 # AL-Go Per Tenant Extension Template
 
 This template repository can be used for managing AppSource Apps for Business Central.
