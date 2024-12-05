@@ -12,6 +12,7 @@ codeunit 82027 ARD_AOCProcessorFactory
         Day2: CodeUnit ARD_AOC202402;
         Day3: Codeunit ARD_AOC202403;
         Day4: Codeunit ARD_AOC202404;
+        Day5: Codeunit ARD_AOC202405;
     begin
         case Day of
         1:
@@ -22,6 +23,8 @@ codeunit 82027 ARD_AOCProcessorFactory
             exit(Day3);
         4:
             exit(Day4);
+        5:
+            exit(Day5);
         end;
     end;
 }
