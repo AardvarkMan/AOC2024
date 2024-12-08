@@ -12,7 +12,7 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
     /// It checks if the values are increasing or decreasing and if the difference between consecutive values is within a certain range.
     /// If the values are either strictly increasing or decreasing and within the range, the result is incremented.
     /// </remarks>
-    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         AOCSupport: Codeunit ARD_AOCSupport;
         Inputs: list of [Text];
@@ -67,7 +67,7 @@ codeunit 82030 ARD_AOC202402 implements ARD_AdventOfCodeProcessor
     /// This procedure processes the input data by splitting it into lines and evaluating each line using the EvaluateList function.
     /// Depending on the evaluation result, it increments the result or fail counters.
     /// </remarks>    
-    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         AOCSupport: Codeunit ARD_AOCSupport;
         Inputs: list of [Text];

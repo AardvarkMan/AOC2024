@@ -11,7 +11,7 @@ codeunit 82032 ARD_AOC202405 implements ARD_AdventOfCodeProcessor
     //
     // Returns:
     //   Integer - The calculated result based on the processed data.
-    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         TempRules: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;
@@ -95,6 +95,7 @@ codeunit 82032 ARD_AOC202405 implements ARD_AdventOfCodeProcessor
         exit(TempInt);
     end;
 
+    /// <summary>
     /// Calculates the result based on the provided ARD_AOCChallenge record.
     /// </summary>
     /// <param name="Rec">The ARD_AOCChallenge record containing the challenge data.</param>
@@ -104,7 +105,7 @@ codeunit 82032 ARD_AOC202405 implements ARD_AdventOfCodeProcessor
     /// This procedure processes the challenge data by splitting it into lines and evaluating specific values.
     /// It then stores these values in a temporary record and processes any changes to calculate the final result.
     /// </remarks>
-    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         TempRules: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;

@@ -16,12 +16,12 @@ table 82024 ARD_AOCChallenge
             Caption = 'Day';
             Tooltip = 'Advent of Code Day';
         }
-        field(3; ARD_Result1; Integer)
+        field(3; ARD_Result1; Decimal)
         {
             Caption = 'Result 1';
             ToolTip = 'Result value 1';
         }
-        field(4; ARD_Result2; Integer)
+        field(4; ARD_Result2; Decimal)
         {
             Caption = 'Result 2';
             ToolTip = 'Result Value 2';

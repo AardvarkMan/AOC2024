@@ -95,6 +95,9 @@ page 82024 ARD_AOCChallengeCard
                 }
                 field(ARD_Result1; Rec.ARD_Result1)
                 {
+                    DecimalPlaces = 0;
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<Precision,0:0><Standard Format,9>';
                 }
                 field(ARD_Challenge1Complete; Rec.ARD_Challenge1Complete)
                 {
@@ -125,6 +128,9 @@ page 82024 ARD_AOCChallengeCard
                 }
                 field(ARD_Result2; Rec.ARD_Result2)
                 {
+                    DecimalPlaces = 0;
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<Precision,0:0><Standard Format,9>';
                 }
                 field(ARD_Challange2Complete; Rec.ARD_Challange2Complete)
                 {

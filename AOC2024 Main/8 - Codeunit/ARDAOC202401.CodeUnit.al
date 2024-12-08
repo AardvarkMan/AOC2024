@@ -14,7 +14,7 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
     // 
     // Returns:
     //   Integer - The calculated result based on the processed data.
-    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         TempIntegerTable: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;
@@ -83,7 +83,7 @@ codeunit 82029 ARD_AOC202401 implements ARD_AdventOfCodeProcessor
     // 
     // Returns:
     //   Integer - The calculated result based on the processed data.
-    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         TempIntegerTable: Record ARD_DoubleIntegerList temporary;
         AOCSupport: Codeunit ARD_AOCSupport;

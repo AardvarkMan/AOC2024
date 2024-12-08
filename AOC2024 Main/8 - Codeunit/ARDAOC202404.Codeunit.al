@@ -9,7 +9,7 @@ codeunit 82028 ARD_AOC202404 implements ARD_AdventOfCodeProcessor
     //   RunExample: Boolean flag indicating whether to run the example data or the actual challenge data.
     // Returns:
     //   Integer: The count of occurrences of the specified character sequence in the matrix.
-    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult1(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         AOCSupport: Codeunit ARD_AOCSupport;
         Matrix: list of [list of [Char]];
@@ -122,7 +122,7 @@ codeunit 82028 ARD_AOC202404 implements ARD_AdventOfCodeProcessor
     /// and then storing these lists in a matrix. It then iterates through the matrix to count occurrences of the character 'a'
     /// that meet a specific condition defined by the XTest function.
     /// </remarks>
-    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Integer
+    procedure CalculateResult2(Rec: record ARD_AOCChallenge; RunExample: Boolean): Decimal
     var
         AOCSupport: Codeunit ARD_AOCSupport;
         Matrix: list of [list of [Char]];
