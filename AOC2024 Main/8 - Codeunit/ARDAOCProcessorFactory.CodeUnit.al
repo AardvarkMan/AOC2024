@@ -15,6 +15,7 @@ codeunit 82027 ARD_AOCProcessorFactory
         Day5: Codeunit ARD_AOC202405;
         Day6: Codeunit ARD_AOC202406;
         Day7: Codeunit ARD_AOC202407;
+        Day8: Codeunit ARD_AOC202408;
     begin
         case Day of
         1:
@@ -31,6 +32,8 @@ codeunit 82027 ARD_AOCProcessorFactory
             exit(Day6);
         7:
             exit(Day7);
+        8:
+            exit(Day8);
         else
             error('No processor available for day %1.', Day);
         end;
