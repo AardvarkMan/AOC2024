@@ -87,16 +87,19 @@ codeunit 82028 ARD_AOC202404 implements ARD_AdventOfCodeProcessor
         Found := true;
 
         foreach SearchChar in SearchArray do begin
+            //Out of bounds test
             if (Row > matrix.Count) OR (Row < 1) then begin
                 Found := false;
                 break;
             end;
 
+            //Out of bounds test
             if (Column > matrix.get(Row).Count) OR (Column < 1) then begin
                 Found := false;
                 break;
             end;
 
+            //Character mismatch test
             if matrix.get(Row).get(Column) <> SearchChar then begin
                 Found := false;
                 break;
@@ -127,7 +130,6 @@ codeunit 82028 ARD_AOC202404 implements ARD_AdventOfCodeProcessor
         AOCSupport: Codeunit ARD_AOCSupport;
         Matrix: list of [list of [Char]];
         CharArray: list of [Char];
-        SearchArray: list of [Char];
         Lines: List of [Text];
         TextValue: Text;
         testChar: Char;
@@ -136,10 +138,6 @@ codeunit 82028 ARD_AOC202404 implements ARD_AdventOfCodeProcessor
         Result: Integer;
     begin
         Result := 0;
-        SearchArray.Add('x');
-        SearchArray.Add('m');
-        SearchArray.Add('a');
-        SearchArray.Add('s');
 
         if RunExample then
             Lines := AOCSupport.SplitLines(Rec.RetrieveChallengeExample())

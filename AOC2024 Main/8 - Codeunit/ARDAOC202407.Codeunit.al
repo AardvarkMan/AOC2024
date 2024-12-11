@@ -71,10 +71,9 @@ codeunit 82034 ARD_AOC202407 implements ARD_AdventOfCodeProcessor
         Values: List of [decimal];
         Expected: decimal;
         Result: decimal;
-        failed: Decimal;
     begin
         Result := 0;
-        Failed := 0;
+
         if RunExample then
             Lines := AOCSupport.SplitLines(Rec.RetrieveChallengeExample())
         else

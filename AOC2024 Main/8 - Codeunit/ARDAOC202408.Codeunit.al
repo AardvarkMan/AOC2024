@@ -26,7 +26,16 @@ codeunit 82035 ARD_AOC202408 implements ARD_AdventOfCodeProcessor
 
         exit(ProcessNodes(Matrix));
     end;
-
+    
+    ///<summary>
+    /// Processes the nodes in the given matrix and returns the result as a decimal value.
+    /// </summary>
+    /// <param name="Matrix">A list of lists containing characters representing the matrix to be processed.</param>
+    /// <returns>A decimal value representing the result of processing the nodes in the matrix.</returns>
+    /// <param name="NodeValue">The character value of the node to process.</param>
+    /// <param name="NodeRow">The row index of the node to process.</param>
+    /// <param name="NodeColumn">The column index of the node to process.</param>
+    /// <returns>The number of unique antinodes found and added to the NodeList.</returns>
     local procedure ProcessNodes(var Matrix: list of [list of [Char]]): Decimal
     var
         Result: Decimal;
@@ -51,6 +60,15 @@ codeunit 82035 ARD_AOC202408 implements ARD_AdventOfCodeProcessor
         exit(Result);
     end;
 
+    /// <summary>
+    /// Processes a node in a matrix and calculates its antinodes.
+    /// </summary>
+    /// <param name="Matrix">A list of lists representing the matrix of characters.</param>
+    /// <param name="NodeList">A list of text representing the locations of antinodes.</param>
+    /// <param name="NodeValue">The character value of the node to process.</param>
+    /// <param name="NodeRow">The row index of the node to process.</param>
+    /// <param name="NodeColumn">The column index of the node to process.</param>
+    /// <returns>The number of unique antinodes found and added to the NodeList.</returns>
     local procedure ProcessNode(var Matrix: list of [list of [Char]]; var NodeList: List of [Text]; NodeValue: char; NodeRow: integer; NodeColumn: integer): Integer
     var
         MatrixRow: List of [Char];
